@@ -35,6 +35,9 @@ public class Triangle {
     double sideA = v1.distanceTo(v2);
     double sideB = v2.distanceTo(v3);
     double sideC = v3.distanceTo(v1);
+    sideA = Math.round(sideA * 10000) / 10000;
+    sideA = Math.round(sideA * 10000) / 10000;
+    sideA = Math.round(sideA * 10000) / 10000;
     if (sideA == sideB && sideA == sideC) return "equilateral";
     else if (sideA == sideB || sideA == sideC || sideB == sideC) return "isosceles";
     else return "scalene";
